@@ -1,0 +1,59 @@
+.card-big-shadow {
+    position: relative;
+}
+
+.card.card-just-text {
+    .content {
+        padding: 50px 65px;
+        text-align: center;
+    }
+}
+
+.card {
+    height: 100%;
+    .content {
+        padding: 20px 20px 10px 20px;
+        background-color: #ff8f5e;
+    }
+    .description {
+        font-size: 16px;
+        color: #66615b;
+        font-family: 'Roboto Serif', sans-serif;
+    }
+}
+
+.card-big-shadow {
+    &:before {
+        background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        bottom: -12%;
+        content: "";
+        display: block;
+        left: -12%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+    }
+}
+
+.content-card {
+    margin-top: 30px;
+}
+
+.title {
+    font-size: 18px;
+    color: #ebdbdb;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+.category {
+    font-size: 14px;
+}
+
+.main {
+    background-image: url('../../assets/images/Newspaper-Background.jpg');
+    overflow: hidden;
+}

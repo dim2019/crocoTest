@@ -1,0 +1,21 @@
+<div class="main">
+    <div class="d-flex justify-content-center mt-2">
+        <button (click)="onBackClick()" class="btn btn-warning">Back</button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="content-card" *ngFor="let post of (userPosts | async)">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text">
+                        <div class="content">
+                            <h6 class="category">{{post?.name}}</h6>
+                            <h4 class="title">{{post?.email}}</h4>
+                            <p class="description">{{post?.body}}</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

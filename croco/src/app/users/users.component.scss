@@ -1,0 +1,11 @@
+h1 {
+    transform: translateX(45%);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 50px auto;
+    gap: 10px;
+}
