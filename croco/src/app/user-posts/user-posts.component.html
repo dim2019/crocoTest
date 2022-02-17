@@ -1,8 +1,10 @@
 <div class="main">
+    <!-- აეს არის უკან დაბრუნების ღილაკი რომელზეც ადევს კლიკ ლისენერი გამოყენებულია bootstrapის კლასები -->
     <div class="d-flex justify-content-center mt-2">
         <button (click)="onBackClick()" class="btn btn-warning">Back</button>
     </div>
     <div class="container">
+        <!-- ამ კონტეინერში -->
         <div class="row">
             <div class="content-card" *ngFor="let post of (userPosts | async)">
                 <div class="card-big-shadow">

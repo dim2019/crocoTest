@@ -1,6 +1,7 @@
 <div class="container emp-profile">
     <div class="row">
         <div class="col-md-4">
+            <!-- ესაა სურათის სექცია-->
             <div class="profile-img">
                 <img src="../../assets/images/croco_bet_logo_redesign.jpg" alt="img" />
                 <div class="file btn btn-lg btn-primary">
@@ -12,9 +13,11 @@
         <div class="col-md-6">
             <div class="profile-head">
                 <h5>
+                    <!-- აქ ვახდენ username-ის ბაინდინგს -->
                     {{userInfo?.username}}
                 </h5>
                 <h6>
+                    <!-- აქ ვახდენ website-ის ბაინდინგს -->
                     {{userInfo?.website}}
                 </h6>
                 <p class="proile-rating">phone : <span>{{userInfo?.phone}}</span></p>
@@ -30,6 +33,7 @@
         </div>
 
     </div>
+    <!-- ესაა მომხმარებლის ადრესის აღწერა რომელიც არის მარცხენა კუთხეში განლაგებული გამოყენებულია bootstrap-ის კლასები -->
     <div class="row">
         <div class="col-md-4">
             <div class="profile-work">
@@ -45,6 +49,8 @@
                 <span>lng : {{userInfo?.address?.geo?.lng}}</span>
             </div>
         </div>
+
+        <!-- აქაც გამოყენებულია bootstrap-ის კლასები ესაა მთავარი ინფორმაცია მომხმარებლის შესახებ, რასაც დინამიურად გადაეცემა მომხმარებლის ინფორმაცია-->
         <div class="col-md-8">
             <div class="tab-content profile-tab" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
