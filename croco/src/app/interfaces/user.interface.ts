@@ -1,3 +1,4 @@
+/* ესაა ინტერფეისი აქ აღწერილლია api დან დაბრუნებული პასუხის ტიპები*/
 export interface userInfo{
     id: number;
     name: string;

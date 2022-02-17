@@ -20,6 +20,7 @@ export class UsersComponent implements OnInit {
     this.users = this.userService.getAllUsers()
   }
   redirecting(userId: number){
+    /* აქ ვახდენთ შემდეგ როუტზე გადამისამართებას*/
     this._router.navigate(['UserInfo', userId])
     
   }
