@@ -6,13 +6,9 @@
     background: #fff;
     .profile-img {
         text-align: center;
-        .img {
-            width: 237px;
-            height: 156px;
-            border: 1px solid black;
-            margin-left: -4%;
-            box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
-            background: initial;
+        img {
+            width: 70%;
+            height: 70%;
         }
         .file {
             position: relative;
