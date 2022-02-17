@@ -4,8 +4,9 @@
         <button (click)="onBackClick()" class="btn btn-warning">Back</button>
     </div>
     <div class="container">
-        <!-- ამ კონტეინერში -->
+        <!-- ამ კონტეინერში ჩაყრილია პოსტები-->
         <div class="row">
+            <!-- აქ ხდება ციკლის დატრიალება იმდენჯერ რამდენი პოსტიც აქვს იუზერს, ეს ყველაფერი ხდება ასინქრონულად და ჩვენ აღარ გვიწევს typescript ფაილში subscribe-ის გაკეთება, ამ შემთხვევაში post ში ჩაიწერება მომხმარებლის ერთი პოსტი და ყოველ დატრიალებაზე მიიღებს ახალ მნიშვნელობებს  რაზეც მოვახდენთ ბაინდინგს და დავხატავთ ქვემოთ აღწერილ თეგებში (h6, h4, p) -->
             <div class="content-card" *ngFor="let post of (userPosts | async)">
                 <div class="card-big-shadow">
                     <div class="card card-just-text">
